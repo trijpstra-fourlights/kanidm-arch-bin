@@ -27,6 +27,8 @@ jobs:
           build-args: |
             AUR_PACKAGE=kanidm
             RUST_VERSION=1.94.0
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       - name: Extract artifacts
         run: |
